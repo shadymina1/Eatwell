@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4">
+
+    <ImageView
+        android:id="@+id/imageViewY4"
+        android:layout_width="673dp"
+        android:layout_height="599dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@+id/promo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background" />
+
+    <TextView
+        android:id="@+id/receipt2"
+        android:layout_width="312dp"
+        android:layout_height="531dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="16dp"
+        android:background="#5BFFFFFF"
+        android:gravity="center_horizontal"
+        android:text="Your Order:"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewY4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="225dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Eatwell"
+        android:textAllCaps="true"
+        android:textColor="#4C5500"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/promo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/promo"
+        android:layout_width="287dp"
+        android:layout_height="601dp"
+        android:background="#DC000000"
+        android:gravity="center"
+        android:text="As opening promotion : you have a chance to get your food free, Just click the STAR  and find out if you are eligible or not !!"
+        android:textColor="#FFF5F5"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/gmbl"
+        android:layout_width="136dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="28dp"
+        android:background="#03FFFFFF"
+        android:onClick="chance"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="@+id/imageViewY4"
+        app:layout_constraintTop_toBottomOf="@+id/textViewY4"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="292dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:background="#BF050505"
+        android:gravity="center"
+        android:text="!"
+        android:textColor="#FFF9F9"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="@+id/imageViewY4"
+        app:layout_constraintTop_toBottomOf="@+id/gmbl" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
